@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Story - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Crane-Tech-Kitchen Story</h1>
+        <img src="kitchen story.jpg" alt="Kitchen Story" id="home-image">
+    </header>
+    <main>
+        <section id="search-section">
+            <h2>Search for Food Items</h2>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter food item">
+                <div>
+                    <label><input type="radio" name="category" value="vegetables"> Vegetables</label>
+                    <label><input type="radio" name="category" value="sweets"> Sweets</label>
+                    <label><input type="radio" name="category" value="softDrinks"> Soft Drinks</label>
+                    <label><input type="radio" name="category" value="fruits"> Fruits</label>
+                    <label><input type="radio" name="category" value="grains"> Grains</label>
+                    <label><input type="radio" name="category" value="meats"> Meats</label>
+                    <label><input type="radio" name="category" value="dairy"> Dairy</label>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        
+        <!-- Search Results -->
+        <section id="search-results" style="display: none;">
+            <h2>Search Results</h2>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Search results will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Cart Summary -->
+        <section id="cart-summary" style="display: none;">
+            <h2>Cart Summary</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be dynamically added here -->
+                </tbody>
+            </table>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </section>
+
+        <!-- Checkout Section -->
+        <section id="checkout-section" style="display: none;">
+            <h2>Order Details</h2>
+            <div id="order-details">
+                <!-- Order details will be inserted here -->
+            </div>
+            <button id="confirm-payment-btn">Confirm Payment</button>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback-section" style="display: none;">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <label for="feedback-comments">Leave your comments:</label>
+                <textarea id="feedback-comments" rows="4" cols="50"></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <!-- Thank You Message -->
+        <section id="feedback-thanks" style="display: none;">
+            <h2>Thank you for your feedback!</h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
